@@ -1,6 +1,4 @@
-*{
 
-}
 body{
   width:100vw;
   height: 100vh;
@@ -44,6 +42,7 @@ body{
   font-weight: 600;
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 #aboutMe {
@@ -86,7 +85,6 @@ body{
     height: 400px;
     margin-top: 70px;
     border-radius: 5px; /* 5px rounded corners */
-    border: 1px solid rgb(32, 100, 179);
 }
 
 #container {
@@ -101,7 +99,9 @@ body{
   font-family: quicksand, sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
 }
+
 
 @media only screen and (max-width: 600px) {
 
@@ -115,8 +115,48 @@ body{
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
   }
-  @media screen and (min-width: 1000px) {
-    html {
-      font-size: 22px;
+  @media screen and (min-width: 900px) {
+    #profile-container{
+      width: 50vw;
+    }
+    
+    #AboutMe {
+      width: 50vw;
+    }
+
+
+    #body{
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    #btn-resume{
+      display: none;
+    }
+
+    #btn-resume1{
+      background: #0EB536;
+      width: 208px;
+      height: 48px;
+      border: none;
+      border-radius:10px;
+      margin-top:80px;
+      font-family: quicksand, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      color: white;
+    }
+
+    #text{
+      padding: 10px;
+    }
+    #text h3{
+      text-align: left;
     }
   }
+
+

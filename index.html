@@ -24,6 +24,7 @@
 </head>
 
 <body>
+<div id="body">
 <section id="profile-container">
 
 
@@ -34,47 +35,65 @@
 
         <div class="mx-auto">
           <img src="./assets//bechera.png" class="img-fluid"  alt="Responsive image"/>
-          <button id="btn-resume">Download Resume</button>
+
         </div>
        </div>
-      
-       
     </section>
 
-    <section>
+    <section id="AboutMe">
     <div class="p-5">
       <h2 id="aboutMe">About Me</h2>
       <div id="line"> </div> 
     </div>
-      <div class="mb-5 p-1" id="text">
+      <div class="mb-5 p-5" id="text">
         <h3>Ever since I was enrolled in a coding bootcamp at 14 years old, I have not been able to stop making websites.</h3>
         <h3>Ever since then I knew coding was my passion</h3>
         <h3>I am pursing becoming a full stack web developer at Fanshawe College</h3>
         <h3>I love React, PHP, and everything UI/UX. </h3>
     </div>
+  
 
     <div class="d-flex justify-content-center ">
-      <img src="./assets/github-logo.png" width="30" height="30" class="m-2">
-      <img src="./assets/linkedin.png" width="30" height="30" class="m-2">
-      <img src="./assets/twitter.png" width="30" height="30" class="m-2">
-      <img src="./assets/stack-overflow.png" width="30" height="30" class="m-2">
+      <a href="https://github.com/Pepsiman715"> <img src="./assets/github-logo.png" width="30" height="30" class="m-2"></a>
+      <a href="https://www.linkedin.com/in/bechera-chapman-tremblay-49b22b199/"><img src="./assets/linkedin.png" width="30" height="30" class="m-2"></a>
+      <a href="https://twitter.com/Bechera2"><img src="./assets/twitter.png" width="30" height="30" class="m-2"></a>
+      <a href ="https://stackoverflow.com/users/16129990/bechera?tab=profile"><img src="./assets/stack-overflow.png" width="30" height="30" class="m-2"></a>
     </div>
-
+    <div class="d-flex p-5">
+    <a href="./assets//Resume-PDF.pdf" download>
+      <button id="btn-resume1">Download Resume</button>
+    </a>
+  </div>
     </section>
+  
+  </div>
+  
     <section>
         <h2 id="projects">Projects</h2>
         <div class="d-flex flex-wrap justify-content-evenly ">
 
           <div id="card" class="mx-auto">
-            <div id="container">
-              
-            </div>
+            <section class="mx-auto h-50 text-center">
+              <a href="https://github.com/Pepsiman715/Expo-Login-SignUp"><img src="./assets/react-native.webp" width="50%" height="70%"  alt="image" class="mx-auto my-3"/></a>
+            </section>
+
+            <section class="mx-auto h-50 text-center  align-items-center p-1">
+              <p id="p">A login/sign application using Firebase's firestore and Auth API. Users would  be able to upload a profile picture. Once logged in users were able to compose an email and SMS message using Expo-Location and Expo-SMS API's.</p>
+          
+            </section>
           </div>
 
           <div id="card" class="mx-auto ">
-            <div id="container">
-              
-            </div>
+            <section class="mx-auto h-50 text-center">
+              <a href="https://github.com/viktoravelino/application-project-group-one"><img src="./assets/TypeScript.webp" width="80%" height="90%"  alt="image" class="mx-auto my-3"/></a>
+            </section>
+
+            <section class="mx-auto h-50 text-center align-items-center pt-4">
+              <p id="p">A money manager app where users are able to login/sign-up, create budgets,expenses,
+              change profile pictures and share budgets.</p>
+              <p id="p">Used TypeScript, React, Firebase to store data, and async operations</p>
+            </section>
+         
           </div>
 
 
@@ -84,7 +103,7 @@
               <a href="https://pepsiman715.github.io/css-grid-flexbox"><img src="./assets/css.webp" width="100%" height="90%"  alt="image" class="my-3"/></a>
             </section>
 
-            <section class="mx-auto h-50 text-center d-flex align-items-center">
+            <section class="mx-auto h-50 text-center d-flex align-items-center p-5">
               <p id="p">A basic HTML,CSS website to practice using CSS Grid. Designed using Adobe XD.</p>
             </section>
          
@@ -97,7 +116,7 @@
               <a href="https://github.com/Pepsiman715/PizzaAPI"><img src="./assets/Redux.webp" width="100%" height="90%" alt="image"/></a>
             </section>
 
-            <section class="mx-auto h-50 text-center d-flex align-items-center">
+            <section class="mx-auto h-50 text-center d-flex align-items-center p-5">
               <p id="p">Using Typescript and redux to you are able to send HTTP requests using axios to a API.
                 User is able to do GET, POST, and DELETE requests.
                 Desinged Using Adobe XD.</p>
@@ -107,12 +126,12 @@
 
 
           <div id="card" class="mx-auto mb-5 d-flex flex-column">
-
+            
               <section class="mx-auto h-50">
-                <img src="./assets/React.webp" width="100%" height="90%"  alt="image"/>
+                <a href="https://github.com/Pepsiman715/React-Native-FirebaseDB"><img src="./assets/React.webp" width="100%" height="90%"  alt="image"/> </a>
               </section>
 
-              <section class="mx-auto h-50 text-center d-flex align-items-center">
+              <section class="mx-auto h-50 text-center d-flex align-items-center p-5">
                 <p id="p">Used Firebase to store user data, implemented a login/signup page, upload profile functionality using expo camera API, file API and more.</p>
               </section>
            
