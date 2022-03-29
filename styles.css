@@ -30,7 +30,7 @@ body{
   font-weight: bold  
 }
 
-#btn-resume{
+#btn-resume1{
   background: #0EB536;
   width: 208px;
   height: 48px;
@@ -119,6 +119,33 @@ body{
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
   }
+
+  @media screen and (min-width: 1080px){
+    #AboutMe{
+      height: 100vh;
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      
+    }
+
+    #line {
+      background: #0EB536;
+      width: 300px;
+      height: 5px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    #me {
+      margin-bottom: 180px;
+    }
+
+    #image{
+      width: 400px;
+    }
+  }
+
   @media screen and (min-width: 900px) {
     #profile-container{
       width: 50vw;
@@ -153,6 +180,10 @@ body{
       font-weight: 600;
       font-size: 20px;
       color: white;
+    }
+
+    #btn-container {
+      justify-content: center;
     }
 
     #text{
