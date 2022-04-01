@@ -4,7 +4,13 @@ body{
   height: 100vh;
 }
 
-
+#line {
+  background: #0EB536;
+  width: 150px;
+  height: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 #profile-container{
   display: flex;
@@ -91,18 +97,21 @@ body{
     border-radius: 5px; /* 5px rounded corners */
     z-index: 0;
     overflow: hidden;
+
 }
 
-  #card:hover{
+ #codeImage{
+   background-color: transparent !important;
+ }
+
+  #codeImage:hover{
     transition: all 0.4s ease-out;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
     top: -4px;
-    border: 1px solid #cccccc;
     background-color: white;
     transform: scale(1.15);
   }
 
- 
+
 
 
 #container {
@@ -183,7 +192,7 @@ body{
 
     #btn-resume1{
       background: #0EB536;
-      width: 208px;
+      width: fit-content;
       height: 48px;
       border: none;
       border-radius:10px;
@@ -214,6 +223,8 @@ body{
     #text h3{
       text-align: left;
     }
+
+  
   }
 
 
