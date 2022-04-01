@@ -107,7 +107,6 @@ body{
   #codeImage:hover{
     transition: all 0.4s ease-out !important;
     top: -4px !important;
-    background-color: white !important;
     transform: scale(1.15) !important;
   }
 
