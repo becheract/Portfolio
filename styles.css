@@ -5,11 +5,11 @@ body{
 }
 
 #line {
-  background: #0EB536;
-  width: 150px;
-  height: 5px;
-  margin-right: auto;
-  margin-left: auto;
+  background: #0EB536 !important;
+  width: 150px !important;
+  height: 5px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 #profile-container{
@@ -105,10 +105,10 @@ body{
  }
 
   #codeImage:hover{
-    transition: all 0.4s ease-out;
-    top: -4px;
-    background-color: white;
-    transform: scale(1.15);
+    transition: all 0.4s ease-out !important;
+    top: -4px !important;
+    background-color: white !important;
+    transform: scale(1.15) !important;
   }
 
 
@@ -206,11 +206,11 @@ body{
 
 
     #line {
-      background: #0EB536;
-      width: 150px;
-      height: 5px;
-      margin-right: auto;
-      margin-left: auto;
+      background: #0EB536 !important;
+      width: 150px !important;
+      height: 5px !important;
+      margin-right: auto !important;
+      margin-left: auto !important;
     }
 
     #btn-container {
