@@ -61,6 +61,14 @@ body{
   text-align: center;
 }
 
+#tech{
+  font-family: quicksand, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+}
+
 #projects {
   font-family: quicksand, sans-serif;
   font-style: normal;
@@ -110,7 +118,19 @@ body{
     transform: scale(1.15) !important;
   }
 
-
+#gitBtn{
+  background: #0EB536;
+  width: 108px;
+  height: 48px;
+  border: none;
+  border-radius:10px;
+  font-family: quicksand, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
 
 
 #container {
@@ -139,21 +159,17 @@ body{
 
   @media screen and (min-width: 1080px){
 
-    #Project-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      width:200px;
-      margin-left: 18%;
-    }
-
-
     #AboutMe{
       height: 100vh;
+      width: 100vw;
       display:flex;
       flex-direction: column;
       justify-content: flex-start;
-      
+    }
+
+    #Projects{
+      width:100vw;
+      height: 100vh;
     }
 
   
@@ -176,6 +192,7 @@ body{
       width: 50vw;
     }
 
+   
 
     #body{
       display: flex;
@@ -227,3 +244,10 @@ body{
   }
 
 
+@media screen and (max-width: 465px){
+  .tech img{
+    width: 30px;
+  }
+
+
+}
