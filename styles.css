@@ -249,5 +249,7 @@ body{
     width: 30px;
   }
 
-
+  #btn-resume1{
+    font-size: 14px;
+  }
 }
