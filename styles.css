@@ -252,5 +252,14 @@ body{
   #btn-resume1{
     font-size: 15px;
   }
+
+
+}
+
+@media screen and (max-width: 300px) {
+  #redux {
+    width: 80%;
+    height: 80%;
+  }
 }
 
