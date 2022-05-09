@@ -21,21 +21,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <!--Css Animations-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 <div id="body">
 <section id="profile-container">
 
-
        <div class=" d-flex flex-column" id="me">
         <div id="myName">
          <h1>I'm <span id="title">Bechera Chapman-Tremblay</span></h1>
+         <div id="background">
+
+         </div>
         </div>
 
-        <div class="mx-auto">
-          <img src="./assets//bechera.png" id="image" class="img-fluid"  alt="Bechera Chapman-Tremblay"/>
-        </div>
 
         <div class="d-flex justify-content-around mx-auto p-3" id="social-icons">
           <a href="https://github.com/Pepsiman715" id="codeImage"> <img src="./assets/github-logo.png" width="30" height="30" class="m-2"></a>
@@ -49,15 +51,15 @@
 
     <section id="AboutMe">
     <div class="p-5">
-      <h2 id="aboutMe">About Me</h2>
+      <h2 id="aboutMe" data-aos="fade-down-left" data-aos-duration="2000">About Me</h2>
       <div id="line"> </div> 
     </div>
 
       <div class="p-5" id="text">
         <h3>Ever since I was enrolled in a coding boot camp at 14 years old, I have not been able to stop making websites.</h3>
-        <h3>Ever since then I knew coding was my passion.</h3>
-        <h3>I am currently studying at Fanshawe College to become a full-stack web developer.</h3>
-        <h3>I love React, PHP, and everything UI/UX. </h3>
+        <h3>Since then I knew coding was my passion.</h3>
+        <h3>I graduated Fanshawe's college internet application and web development program.</h3>
+        <h3>I love React, web design, and backend. </h3>
         <div class="text-center" id="download-container">
           <a href="./assets//Resume-PDF.pdf" download>
             <button id="btn-resume1">Download Resume</button>
@@ -65,19 +67,15 @@
         </div>
       </div>
 
-
-
-
-
     </section>
   
   </div>
   
-    <section id="Projects">
+    <section id="Technologies">
 
       <div class="d-flex justify-content-around flex-wrap">
         <div class="mx-auto">
-        <h3 class="text-center" id="techTitle">Technolgies</h3>
+        <h3 class="text-center" id="techTitle" data-aos="fade-down-right" data-aos-duration="2000">Technologies</h3>
         <div id="line"> </div> 
 
         <div class="d-flex flex-wrap justify-content-center p-5" id="tech-container">
@@ -92,46 +90,49 @@
         </div>
 
         <div class="tech">
-          <img src="./assets/react.png" width="65px" /> 
+          <img src="./assets/react.png" width="55px" /> 
           <img src="./assets/jquery.webp" width="50px" /> 
           <img src="./assets//php.svg" width="50px" /> 
           <img src="./assets/mySQL.png" width="100px" /> 
-          <img src="./assets//TS.webp" width="60px" />
-          <img src="./assets//Json.png" width="60px" />
+          <img src="./assets//TS.webp" width="50px" />
+          <img src="./assets//Json.png" width="50px" />
         </div>
 
         </div>
         
       </div>
       </div>
+    </section>
 
+    <section id="Projects">
       <div id="Project-container">
-        <h2 id="projects">Projects</h2>
+        <h2 id="projects" data-aos="fade-down-left" data-aos-duration="2000">Projects</h2>
         <div id="line"></div> 
       </div>
 
         <div class="d-flex flex-wrap justify-content-evenly ">
 
-          <div id="card" class="mx-auto">
-            <section class="mx-auto h-50 text-center" >
+          <div id="card" class="mx-auto" >
+            <section class="mx-auto h-50 text-center " >
             <img src="./assets/react-native.webp" width="50%" height="70%"  alt="image" class="mx-auto my-3"/>
             </section>
 
-            <section class="mx-auto h-40 text-center  align-items-center p-1 flex-wrap">
+            <section class="mx-auto h-auto text-center  align-items-center p-1 ">
               <p id="p">A login/sign application using Firebase's firestore and Auth API. Users would be able to upload a profile picture, compose an email and SMS message and Expo-SMS and Email API's.</p>
               <a href="https://github.com/Pepsiman715/Expo-Login-SignUp"><button class="mx-auto" id="gitBtn">Github</button></a>
             </section>
           </div>
 
           <div id="card" class="mx-auto ">
-            <section class="mx-auto h-50 text-center" >
+            <section class="mx-auto h-50 text-center " >
               <img src="./assets/TypeScript.webp" width="60%" height="70%"  alt="image" class="mx-auto my-3"/>
             </section>
 
-            <section class="mx-auto h-40 text-center align-items-center pt-4 flex-wrap">
+            <section class="mx-auto h-40 text-center align-items-center pt-4 ">
               <p id="p">A money manager app where users can log in/sign-up, create budgets, expenses, and wishlists.</p>
               <p id="p">  Used TypeScript, React, Firebase to store data, and async operations.</p>
               <a href="https://github.com/viktoravelino/application-project-group-one"> <button class="mx-auto" id="gitBtn">Github</button></a>
+              <a href="https://application-project-group-1.web.app/"> <button class="mx-auto" id="gitBtn">Live Page</button></a>
             </section>
          
           </div>
@@ -143,10 +144,12 @@
               <img src="./assets/Redux.png" class="" width="100%" height="83%" alt="image" id="redux"/>
             </section>
 
-            <section class="mx-auto h-40 text-center align-items-center flex-wrap p-2">
-              <p id="p">Using Typescript and redux users would be able to place orders, delete orders, and update orders. Used Axios's API and GET, POST, and DELETE requests.
+            <section class="mx-auto h-40 text-center align-items-center  p-2">
+              <p id="p">Using Typescript and redux users would be able to place orders, delete orders, and update orders. 
+                Used Axios's API and GET, POST, and DELETE requests.
                </p>
                <a href="https://github.com/Pepsiman715/PizzaAPI"><button class="mx-auto" id="gitBtn">Github</button></a>
+               <a href="https://pepsiman715.github.io/PizzaAPI/"><button class="mx-auto" id="gitBtn">Live Page</button></a>
             </section>
          
           </div>
@@ -168,7 +171,7 @@
           </div>
 
         </div>
-    </section>
+      </section>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -180,5 +183,7 @@
     <!--Js file-->
     <script src="script.js"></script>
 </body>
-
+<script>
+  AOS.init();
+</script>
 </html>

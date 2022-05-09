@@ -2,6 +2,7 @@
 body{
   width:100vw;
   height: 100vh;
+  overflow-x:hidden;
 }
 
 #line {
@@ -12,13 +13,36 @@ body{
   margin-left: auto !important;
 }
 
+#background {
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+#background p {
+  font-size: 18px;
+  font-family: noh-sori, sans-serif !important;
+  font-style: normal !important;
+  animation-name: example;
+  animation-duration: 4s;
+  color: grey;
+  z-index: -1;
+}
+
+/* @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+} */
+
 #profile-container{
   display: flex;
   justify-content:center;
   align-items:center;
   background:#191B1B;
   color: white;
-  text-align: center;
   height: 100vh;
   width: 100vw;
 }
@@ -26,14 +50,14 @@ body{
 #myName {
   padding-bottom: 20px;
   text-align: center;
-
 }
 
 #myName h1 {
   font-family: noh-sori, sans-serif !important;
   font-style: normal !important;
-  
+  z-index: 1;
 }
+
 #title {
   font-weight: bold  
 }
@@ -51,30 +75,42 @@ body{
   font-size: 20px;
   text-align: center;
   color: white;
+  transition: transform 250ms;
+}
+
+#btn-resume1:hover{
+  transition: all 0.4s ease-out !important;
+  top: -4px !important;
+  transform: scale(1.15) !important;
 }
 
 #aboutMe {
   font-family: quicksand, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 50px;
   text-align: center;
+ 
 }
+
+
 
 #techTitle{
   font-family: quicksand, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 50px;
   text-align: center;
+  
 }
 
 #projects {
   font-family: quicksand, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 50px;
   text-align: center;
+  
 }
 
 
@@ -105,11 +141,11 @@ body{
     border-radius: 5px; /* 5px rounded corners */
     z-index: 0;
     overflow: hidden;
-
 }
 
  #codeImage{
    background-color: transparent !important;
+   transition: transform 250ms;
  }
 
   #codeImage:hover{
@@ -120,7 +156,7 @@ body{
 
 #gitBtn{
   background: #0EB536;
-  width: 108px;
+  width: 105px;
   height: 48px;
   border: none;
   border-radius:10px;
@@ -130,8 +166,14 @@ body{
   font-size: 20px;
   text-align: center;
   color: white;
+  transition: transform 250ms;
 }
 
+#gitBtn:hover{
+  transition: all 0.4s ease-out !important;
+  top: -4px !important;
+  transform: scale(1.15) !important;
+}
 
 #container {
   border: 1px solid red;
@@ -151,6 +193,34 @@ body{
   html {
     font-size: 16px;
   }
+
+  #Technolgies{
+    padding-bottom: 50px;
+  }
+
+  #techTitle{
+    animation-duration: 3s;
+    animation-name: slidein1;
+  }
+
+
+
+  #AboutMe{
+    padding: 50px;
+  } 
+  
+
+  .tech img{
+    animation-name: images;
+    animation-duration: 4s;
+    animation-timing-function: ease-out; 
+    animation-delay: 0.1;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+
+
   @media screen and (min-width: 320px) {
     html {
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -167,7 +237,7 @@ body{
       justify-content: flex-start;
     }
 
-    #Projects{
+    #Technolgies{
       width:100vw;
       height: 100vh;
     }
