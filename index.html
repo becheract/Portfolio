@@ -27,17 +27,16 @@
 </head>
 
 <body>
-<div id="body">
-<section id="profile-container">
-
+<div id="body" >
+<section id="profile-container" >
+  
        <div class=" d-flex flex-column" id="me">
-        <div id="myName">
-         <h1>I'm <span id="title">Bechera Chapman-Tremblay</span></h1>
+        <div id="myName" >
+         <h1 class="p-5">I'm <span id="title">Bechera Chapman-Tremblay</span></h1>
          <div id="background">
 
          </div>
         </div>
-
 
         <div class="d-flex justify-content-around mx-auto p-3" id="social-icons">
           <a href="https://github.com/becheract" id="codeImage"> <img src="./assets/github-logo.png" width="30" height="30" class="m-2"></a>
@@ -49,18 +48,18 @@
        </div>
     </section>
 
-    <section id="AboutMe">
+    <section id="AboutMe" class="text-center">
     <div class="p-5">
       <h2 id="aboutMe" data-aos="fade-down-left" data-aos-duration="2000">About Me</h2>
       <div id="line"> </div> 
     </div>
 
-      <div class="p-5" id="text">
+      <div class="p-5 " id="text">
         <h3>Ever since I was enrolled in a coding boot camp at 14 years old, I have not been able to stop making websites.</h3>
         <h3>Since then I knew coding was my passion.</h3>
         <h3>I graduated Fanshawe's college internet application and web development program.</h3>
         <h3>I love React, web design, and backend. </h3>
-        <div class="text-center" id="download-container">
+        <div id="download-container">
           <a href="./assets//Resume-PDF.pdf" download>
             <button id="btn-resume1">Download Resume</button>
           </a>
@@ -71,7 +70,7 @@
   
   </div>
   
-    <section id="Technologies">
+    <section id="Technologies" >
 
       <div class="d-flex justify-content-around flex-wrap">
         <div class="mx-auto">
@@ -80,23 +79,27 @@
 
         <div class="d-flex flex-wrap justify-content-center p-5" id="tech-container">
 
-        <div class="tech">
-          <img src="./assets/node.png" width="50px"/> 
-          <img src="./assets/js.png" width="36px" height="auto" /> 
-          <img src="./assets/html.png" width="50px" height="auto"/> 
-          <img src="./assets/css3.png" width="35px" /> 
-          <img src="./assets/python.png" width="50px" /> 
-          <img src="./assets/angular-icon.svg" width="50px" /> 
-        </div>
-
-        <div class="tech">
-          <img src="./assets/react.png" width="55px" /> 
-          <img src="./assets/jquery.webp" width="50px" /> 
-          <img src="./assets//php.svg" width="50px" /> 
-          <img src="./assets/mySQL.png" width="100px" /> 
-          <img src="./assets//TS.webp" width="50px" />
-          <img src="./assets//Json.png" width="50px" />
-        </div>
+        <div class="d-flex flex-wrap justify-content-center p-5" id="tech-container">
+          <div class="tech d-flex align-items-center">
+          <img src="./assets/node.png" width="50px" height="auto">
+          <img src="./assets/js.png" width="36px" height="auto">
+          <img src="./assets/html.png" width="50px" height="auto">
+          <img src="./assets/css3.png" width="35px" height="auto">
+          <img src="./assets/python.png" width="50px" height="auto">
+          <img src="./assets/angular-icon.svg" width="50px" height="auto">
+          <img src="./assets/firebase.webp" width="50px" height="auto">
+          <img src="./assets/oracle.webp" width="50px" height="auto">
+          </div>
+          <div class="tech d-flex align-items-center">
+          <img src="./assets/react.png" width="55px" height="auto">
+          <img src="./assets/jquery.webp" width="50px" height="auto">
+          <img src="./assets//php.svg" width="50px" height="auto">
+          <img src="./assets/mySQL.png" width="100px" height="auto">
+          <img src="./assets//TS.webp" width="50px" height="auto">
+          <img src="./assets//Json.png" width="50px" height="auto">
+          <img src="./assets//mongodb.webp" width="50px" height="auto">
+          </div>
+          </div>
 
         </div>
         
@@ -104,39 +107,79 @@
       </div>
     </section>
 
-    <section id="Projects">
+    <section id="Projects" class="">
       <div id="Project-container">
         <h2 id="projects" data-aos="fade-down-left" data-aos-duration="2000">Projects</h2>
         <div id="line"></div> 
       </div>
 
-        <div class="d-flex flex-wrap justify-content-evenly ">
+        <div class="d-flex justify-content-center flex-wrap text-center m-5 p-5">
+          <!--Card-->
+          <div class="d-flex flex-column h-100 m-3" id="card">
+            <!--Image-->
+            <section id="image-card">
+              
+            </section>
 
-          <div id="card" class="mx-auto" >
+            <div id="info-section">
+            <!--Project Title-->
+            <section class="p-2">
+              <h3 class="display-3">Email and SMS messenger</h3>
+            </section>
+
+            <!--Description-->
+            <section class="p-2">
+              <p class="p-4 lead" id="p">An application using Firebase's firestore and Auth API. Users would be able to upload a profile picture, compose an email and SMS message to a contact of their choosing.</p>
+            </section>
+
+            <!--Tech Used-->
+            <section class="pb-5">
+              <h4> Technologies Used</h4>
+              <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <img class="m-4" src="./assets/react-native.webp" width="50w" height="45%" alt="React-Native"/>
+                <img class="m-2" src="./assets/expo.webp" width="90w" height="30%" alt="Expo"/>
+                <img class="m-4" src="./assets/firebase.webp" width="50w" height="45%" alt="Firebase"/>
+                <img class="m-4" src="./assets/css.webp" width="50w" height="45%" alt="CSS3"/>
+              </div>
+            </section>
+
+            <!--Links-->
+            <section class="pb-5 ">
+              <a class="p-5" href="https://github.com/becheract/Expo-Login-SignUp"><button class="mx-auto" id="gitBtn">Github</button></a>
+            </section>
+          </div>
+          </div>
+          
+          <!-- <div id="card" class="mx-auto" >
             <section class="mx-auto h-50 text-center " >
             <img src="./assets/react-native.webp" width="50%" height="70%"  alt="image" class="mx-auto my-3"/>
             </section>
 
-            <section class="mx-auto h-auto text-center  align-items-center p-1 ">
-              <p id="p">A login/sign application using Firebase's firestore and Auth API. Users would be able to upload a profile picture, compose an email and SMS message and Expo-SMS and Email API's.</p>
-              <a href="https://github.com/becheract/Expo-Login-SignUp"><button class="mx-auto" id="gitBtn">Github</button></a>
+            <section class="mx-auto h-40 text-center align-items-center p-5">
+              <p id="p">An application using Firebase's firestore and Auth API. Users would be able to upload a profile picture, compose an email and SMS message to a contact of their choosing.</p>
+             <a href="https://github.com/becheract/Expo-Login-SignUp"><button class="mx-auto" id="gitBtn">Github</button></a>
             </section>
-          </div>
 
+            <section class="mx-auto text-center h-auto border-2 border-red-500 border-solid	">
+              <a class="p-5" href="https://github.com/becheract/Expo-Login-SignUp"><button class="mx-auto" id="gitBtn">Github</button></a>
+            </section>
+
+          </div> -->
+<!-- 
           <div id="card" class="mx-auto ">
             <section class="mx-auto h-50 text-center " >
-              <img src="./assets/firebase.png" width="100%" height="80%"  alt="image" class="mx-auto my-3"/>
+              <img src="./assets/firebase.png" width="110%" height="100%" alt="image" class="mx-auto"/>
             </section>
 
-            <section class="mx-auto h-40 text-center align-items-center pt-4 ">
+            <section class="mx-auto h-50 text-center align-items-center pt-4 ">
               <p id="p">A money manager app where users can log in/sign-up, create budgets, expenses, and wishlists.</p>
-              <p id="p">  Used TypeScript, React, Firebase to store data, and async operations.</p>
+              <p id="p"> Used TypeScript, React, Firebase to store data, and async operations.</p>
               <a href="https://github.com/viktoravelino/application-project-group-one"> <button class="mx-auto" id="gitBtn">Github</button></a>
               <a href="https://application-project-group-1.web.app/"> <button class="mx-auto" id="gitBtn">Live Page</button></a>
             </section>
          
-          </div>
-
+          </div> -->
+<!-- 
 
           <div id="card" class="mx-auto d-flex flex-column">
  
@@ -157,7 +200,7 @@
 
           <div id="card" class="mx-auto d-flex flex-column mb-5">
             
-              <section class="mx-auto h-40">
+              <section class="mx-auto h-45">
                 <img src="./assets/React.webp" width="100%" height="90%"  alt="image"/>
               </section>
 
@@ -183,7 +226,7 @@
             </div>
             </section>
          
-        </div>
+        </div> -->
 
         </div>
       </section>
