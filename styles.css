@@ -62,26 +62,42 @@ body{
   font-weight: bold  
 }
 
-#btn-resume1{
-  background: #0EB536;
+/* CSS */
+#btn-resume1 {
+  background-color: initial;
+  transition: transform 250ms;
+  border-radius:20px;
+  margin-top:80px;
   width: 208px;
   height: 48px;
-  border: none;
-  border-radius:10px;
-  margin-top:80px;
-  font-family: quicksand, sans-serif;
+  background-image: linear-gradient(-180deg, #0EB536, #0ea130);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  width: 208px;
+  cursor: pointer;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  pointer-events: auto;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  border: 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  transition: transform 250ms;
+  font-size: 16px;
+  font-family: quicksand, sans-serif;
 }
 
 #btn-resume1:hover{
   transition: all 0.4s ease-out !important;
-  top: -4px !important;
-  transform: scale(1.15) !important;
+  top: -1px !important;
+  transform: scale(1.05) !important;
 }
 
 #aboutMe {
@@ -130,17 +146,27 @@ body{
  justify-content: center;
 }
 
+#image-card{
+  border-radius: 0px 0px 0px 0px;
+  height: 20vh;
+  background-image: url('./assets//mail.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+#info-section{
+  z-index: 1;
+}
 
 #card{
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 250px;
-    height: 400px;
+    width: 400px;
     margin-top: 70px;
-    border-radius: 5px; /* 5px rounded corners */
-    z-index: 0;
-    overflow: hidden;
+    border-radius: 15px 15px 15px 15px;
+    padding: 20px;
 }
 
  #codeImage{
@@ -156,27 +182,27 @@ body{
 
 #gitBtn{
   background: #0EB536;
-  width: 105px;
+  width: 88px;
   height: 48px;
   border: none;
   border-radius:10px;
   font-family: quicksand, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: white;
   transition: transform 250ms;
+  outline: 0;
 }
 
 #gitBtn:hover{
   transition: all 0.4s ease-out !important;
   top: -4px !important;
-  transform: scale(1.15) !important;
+  transform: scale(1.05) !important;
 }
 
 #container {
-  border: 1px solid red;
   margin: auto;
   text-align: center;
   width: 250px;
@@ -202,7 +228,6 @@ body{
     animation-duration: 3s;
     animation-name: slidein1;
   }
-
 
 
   #AboutMe{
@@ -242,14 +267,17 @@ body{
       height: 100vh;
     }
 
-  
-
     #me {
       margin-bottom: 180px;
     }
 
     #image{
       width: 400px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #card {
     }
   }
 
@@ -261,9 +289,7 @@ body{
     #AboutMe {
       width: 50vw;
     }
-
    
-
     #body{
       display: flex;
       justify-content: center;
@@ -275,21 +301,6 @@ body{
     #btn-resume{
       display: none;
     }
-
-    #btn-resume1{
-      background: #0EB536;
-      width: fit-content;
-      height: 48px;
-      border: none;
-      border-radius:10px;
-      margin-top:80px;
-      font-family: quicksand, sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      color: white;
-    }
-
 
     #line {
       background: #0EB536 !important;
@@ -321,6 +332,7 @@ body{
 
   #btn-resume1{
     font-size: 15px;
+    border: 1px solid blue;
   }
 
 
@@ -331,5 +343,10 @@ body{
     width: 80%;
     height: 80%;
   }
+
+  #btn-resume1{
+    border: 1px solid red;
+  }
+
 }
 
